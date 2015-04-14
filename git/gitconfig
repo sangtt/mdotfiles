@@ -79,7 +79,7 @@
 
   # status
   s = status                        # status
-  st = status                       # status
+  st = status --short               # status
   stat = status                     # status
 
   # tag
@@ -89,6 +89,7 @@
   svnr = svn rebase
   svnd = svn dcommit
   svnl = svn log --oneline --show-commit
+    permission-reset = !git diff -p -R | grep -E \"^(diff|(old|new) mode)\" | git apply
 [format]
   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
 [mergetool]
@@ -125,3 +126,6 @@
   enabled = true
 [include]
   path = .gitconfig.user
+[user]
+	name = Sang Truong
+	email = thanhsangvnm@gmail.com
