@@ -100,7 +100,7 @@
 [merge]
   summary = true
   verbosity = 1
-  tool = diffmerge
+	tool = diffmerge
 [apply]
   whitespace = nowarn
 [branch]
@@ -130,5 +130,5 @@
   name = Sang
   email = sang@vieterp.net
 [mergetool "diffmerge"]
-  trustExitCode = true
-  cmd = /usr/local/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	trustExitCode = true
+	cmd = /usr/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
