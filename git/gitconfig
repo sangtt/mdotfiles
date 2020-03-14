@@ -127,8 +127,8 @@
 [include]
   path = .gitconfig.user
 [user]
-  name = Sang
-  email = sang@vieterp.net
+	name = Sang
+	email = sang@vieterp.net
 [mergetool "diffmerge"]
 	trustExitCode = true
-	cmd = /usr/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	cmd = /usr/local/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
